@@ -116,7 +116,7 @@ function ProjectCard({ project }: { project: Project }) {
 
 function cardLink(status: ProjectStatus): string {
   if (status === 'needs_repair') return '/audit'
-  if (status === 'ready_to_slice') return '/slice'
+  if (status === 'ready_to_slice') return '/slices'
   if (status === 'queued' || status === 'printing' || status === 'failed') return '/jobs'
   return '/'
 }
